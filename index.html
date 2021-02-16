@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icon from font awesome -->
+    <script src="https://kit.fontawesome.com/faf4f00956.js" crossorigin="anonymous"></script>
+    
+    <!-- Fonts from Google - Quicksand -->
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Quicksand: wght @ 400; 500; 700 & display = swap "rel =" stylesheet ">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>page-of-Login With Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form action="#" class="form-container">
+                <h1>Welcome</h1>
+                <section class="input-area">
+                    <div class="input-form">
+                        <i class="fas  fa-user"></i>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-form">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password">
+                        <i id="eye" class="fas fa-eye"></i>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+                
+                <section class="validator-area">
+                    <ul>
+                        <li id="lower-upper">
+                            <span>
+                            <i class="fas fa-circle"></i>
+                        </span>
+                        Lower & upper case
+                        </li>
+                        <li id="numbers">
+                            <span>
+                            <i class="fas fa-circle"></i>
+                        </span>
+                        Number (0 - 9)
+                        </li>
+                        <li id="special-characters">
+                            <span>
+                            <i class="fas fa-circle"></i>
+                            </span>
+                        Special Characters
+                        </li>
+                        <li id="digits">
+                            <span>
+                            <i class="fas fa-circle"></i>
+                        </span>
+                        At least 8 digits
+                        </li>
+                    </ul>
+                </section>
+                <input class="btn" type="submit" id="submit" disabled value="Create Account">
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
